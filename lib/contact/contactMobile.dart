@@ -23,11 +23,11 @@ class ContactMobile extends StatelessWidget {
               letterSpacing: 1.0,
             ),
           ),
-          // Text(
-          //   "Let's get in touch and build something together :)\n\n",
-          //   style: GoogleFonts.montserrat(fontWeight: FontWeight.w200),
-          //   textAlign: TextAlign.center,
-          // ),
+          Text(
+            "Let's get in touch and build something together :)\n\n",
+            style: GoogleFonts.montserrat(fontWeight: FontWeight.w200),
+            textAlign: TextAlign.center,
+          ),
           CarouselSlider.builder(
               itemCount: 3,
               itemBuilder: (BuildContext context, int index, int i) =>
