@@ -1,0 +1,58 @@
+//buildscript {
+//    ext.kotlin_version = '1.6.10'
+//    repositories {
+//        google()
+//        mavenCentral()
+//    }
+//
+//    plugins {
+//        id 'com.android.application' version '7.3.0'
+//        id 'com.android.library' version '7.3.0'
+//        id 'org.jetbrains.kotlin.android' version '1.5.31'
+//    }
+//    dependencies {
+////        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+//
+//        classpath 'com.android.tools.build:gradle:7.3.0'
+//    }
+//}
+//
+//allprojects {
+//    repositories {
+//        google()
+//        mavenCentral()
+//    }
+//}
+//
+//rootProject.buildDir = '../build'
+//subprojects {
+//    project.buildDir = "${rootProject.buildDir}/${project.name}"
+//}
+//subprojects {
+//    project.evaluationDependsOn(':app')
+//}
+//
+//task clean(type: Delete) {
+//    delete rootProject.buildDir
+//}
+//classpath "com.android.tools.build:gradle:7.0.1"
+
+buildscript {
+    ext {
+        kotlin_version = '1.6.10'
+        compose_version = '1.0.5'
+    }
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.1.1"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
