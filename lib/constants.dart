@@ -83,16 +83,53 @@ final kServicesLinks = [
   "https://github.com/sarojyadav88505"
 ];
 
+
+//prject ka name hi servecies1 rakh diye h
+
+final kServicesIcons1 = [
+  "projects/calculator.png",
+  "projects/coffee.jpg",
+  "projects/calculator.png",
+  "projects/calculator.png",
+  "projects/netflix.png",
+];
+
+final kServicesTitles1 = [
+  "Let's Coffee UI App",
+  "Arithematic Calculator App",
+  "Static Netflix Clone page",
+  "SigIn SignUp Authontication App",
+  "Arithematic Calculator App",
+];
+
+final kServicesDescriptions1 = [
+  ".,Let's Coffee UI App.",
+  "Arithematic Calculator App,.",
+  "Static Netflix Clone page.",
+  "SigIn SignUp Authontication App.",
+  "Arithematic Calculator App,.",
+  // "Working as open sknfwekknkource contributor on GitHub with 20+ stars and numerous forks on various projects liked and shared by other developers.\nCheck out my GitHub Profile @sarojyadav88505",
+];
+
+final kServicesLinks1 = [
+  "https://www.fiverr.com/sarojyadav335?up_rollout=true",
+  "https://www.fiverr.com/sarojyadav335?up_rollout=true",
+  "https://www.fiverr.com/sarojyadav335?up_rollout=true",
+  "https://google2googlee.blogspot.com/",
+  "https://github.com/sarojyadav88505"
+];
+
 // projects
+
 final kProjectsBanner = [
-  "assets/projects/calculator.png",
-  "assets/projects/coffee.png",
-  "assets/projects/calculator.png",
-  "assets/projects/netflix.png",
-  // "assets/projects/medkitB.png",
-  // "assets/projects/birthday.png",
-  // "assets/projects/hereiamB.png",
-  // "assets/projects/covidB.png",
+  // "assets/projects/calculator.png",
+  // "assets/projects/coffee.jpg",
+  // "assets/projects/calculator.png",
+  // "assets/projects/netflix.png",
+  "assets/projects/medkitB.png",
+  "assets/projects/birthday.png",
+  "assets/projects/hereiamB.png",
+  "assets/projects/covid.png",
 ];
 
 final kProjectsIcons = [

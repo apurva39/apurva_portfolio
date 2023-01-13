@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-
 import 'package:google_fonts/google_fonts.dart';
 
 
 import '../animations/bottomAnimatio.dart';
 import '../constants.dart';
 import '../widgets/projectCard.dart';
+import '../widgets/servicesCard.dart';
 
 class PortfolioDesktop extends StatelessWidget {
   @override
@@ -28,60 +28,89 @@ class PortfolioDesktop extends StatelessWidget {
             ),
           ),
           Text(
-            "Here are few samples of my previous work :)\n\n",
+            "Here some of my beautiful works :)\n\n",
             style: GoogleFonts.montserrat(fontWeight: FontWeight.w200),
           ),
-          SizedBox(
-            height: width > 1200 ? height * 0.45 : width * 0.2,
-            child: ListView.separated(
-              padding: EdgeInsets.symmetric(vertical: 20.0),
-              scrollDirection: Axis.horizontal,
-              separatorBuilder: (context, index) {
-                return VerticalDivider(
-                  color: Colors.transparent,
-                  width: width * 0.015,
-                );
-              },
-              itemBuilder: (context, index) {
-                return WidgetAnimator(
-                  child: ProjectCard(
-                    cardWidth: width < 1200 ? width * 0.25 : width * 0.35,
-                    cardHeight: width < 1200 ? height * 0.28 : height * 0.1,
-                    backImage: kProjectsBanner[index],
-                    projectIcon: kProjectsIcons[index],
-                    projectTitle: kProjectsTitles[index],
-                    projectDescription: kProjectsDescriptions[index],
-                    projectLink: kProjectsLinks[index],
-                    bottomWidget: index == 1
-                        ? Image.network(
-                      "https://img.icons8.com/material-sharp/384/ffffff/google-play.png",
-                      height: height * 0.04,
-                    )
-                        : Container(),
+          Column(
+            children: [
+              Row(
+                mainAxisAlignment: width < 1200
+                    ? MainAxisAlignment.spaceEvenly
+                    : MainAxisAlignment.center,
+                children: [
+                  WidgetAnimator(
+                    child: ServicesCard1(
+                      projectWidth: width < 1200 ? width * 0.3 : width * 0.22,
+                      projectHeight: width < 1200 ? height * 0.4 : height * 0.35,
+                      projectIcon: kServicesIcons1[0],
+                      projectTitle: kServicesTitles1[0],
+                      projectDescription: kServicesDescriptions1[0],
+                      projectLink: kServicesLinks1[0],
+
+                    ),
                   ),
-                );
-              },
-              itemCount: 4,
-            ),
-          ),
-          SizedBox(
-            height: height * 0.02,
-          ),
-          MaterialButton(
-            hoverColor: kPrimaryColor.withAlpha(150),
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(5.0),
-                side: BorderSide(color: kPrimaryColor)),
-            onPressed: () {
-              launchURL("https://github.com/sarojyadav88505");
-            },
-            child: Text(
-              "See More",
-              style: GoogleFonts.montserrat(
-                fontWeight: FontWeight.w200,
+                  SizedBox(
+                    width: width * 0.03,
+                  ),
+                  WidgetAnimator(
+                    child: ServicesCard1(
+                      projectWidth: width < 1200 ? width * 0.3 : width * 0.22,
+                      projectHeight: width < 1200 ? height * 0.4 : height * 0.35,
+                      projectIcon: kServicesIcons1[1],
+                      projectTitle: kServicesTitles1[1],
+                      projectDescription: kServicesDescriptions1[1],
+                      projectLink: kServicesLinks1[1],
+
+                    ),
+                  ),
+                  SizedBox(
+                    width: width * 0.03,
+                  ),
+                  WidgetAnimator(
+                    child: ServicesCard1(
+                      projectWidth: width < 1200 ? width * 0.3 : width * 0.22,
+                      projectHeight: width < 1200 ? height * 0.4 : height * 0.35,
+                      projectIcon: kServicesIcons1[2],
+                      projectTitle: kServicesTitles1[2],
+                      projectDescription: kServicesDescriptions1[2],
+                      projectLink: kServicesLinks1[2],
+                    ),
+                  ),
+                ],
               ),
-            ),
-          ),
+              SizedBox(
+                height: height * 0.04,
+              ),
+              Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  WidgetAnimator(
+                    child: ServicesCard1(
+                      projectWidth: width < 1200 ? width * 0.3 : width * 0.22,
+                      projectHeight: width < 1200 ? height * 0.4 : height * 0.35,
+                      projectIcon: kServicesIcons1[3],
+                      projectTitle: kServicesTitles1[3],
+                      projectDescription: kServicesDescriptions1[3],
+                      projectLink: kServicesLinks1[3],
+                    ),
+                  ),
+                  SizedBox(
+                    width: width * 0.03,
+                  ),
+                  WidgetAnimator(
+                    child: ServicesCard1(
+                      projectWidth: width < 1200 ? width * 0.3 : width * 0.22,
+                      projectHeight: width < 1200 ? height * 0.4 : height * 0.35,
+                      projectIcon: kServicesIcons1[4],
+                      projectTitle: kServicesTitles1[4],
+                      projectDescription: kServicesDescriptions1[4],
+                      projectLink: kServicesLinks1[4],
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          )
         ],
       ),
     );

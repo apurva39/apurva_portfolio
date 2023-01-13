@@ -1,5 +1,8 @@
+
 import 'package:apurva_portfolio_new/portfolio/portfolio.dart';
 import 'package:apurva_portfolio_new/services/services.dart';
+import 'package:apurva_portfolio_new/widgets/arrowOnTop.dart';
+import 'package:apurva_portfolio_new/widgets/footer.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
@@ -27,8 +30,9 @@ class _MainPageState extends State<MainPage> {
   final List<String> _sectionsName=[
     "Home",
     "About",
-    "Services",
+
     "Projects",
+    "Services",
     "Contact"
   ];
 
@@ -56,10 +60,11 @@ class _MainPageState extends State<MainPage> {
     } else if (i == 1) {
       return About();
     } else if (i == 2) {
-      return Services();
-    } else if (i == 3) {
       return Portfolio();
-    } else if (i == 4) {
+    } else if (i == 3) {
+      return Services();
+    }
+     else if (i == 4) {
       return Contact();
     }
     else if (i == 5) {
@@ -67,15 +72,15 @@ class _MainPageState extends State<MainPage> {
         height: 40.0,
       );
     }
-    // else if (i == 6)
-    // {
-    //   return ArrowOnTop(
-    //     onPressed: () => _scroll(0),
-    //   );
-    // }
-    // else if (i == 7) {
-    //   return Footer();
-    // }
+    else if (i == 6)
+    {
+      return ArrowOnTop(
+        onPressed: () => _scroll(0),
+      );
+    }
+    else if (i == 7) {
+      return Footer();
+    }
     else {
       return Container();
     }
@@ -160,10 +165,10 @@ class _MainPageState extends State<MainPage> {
           delay: Duration(seconds: 3),
           child: NavBarLogo())
           : EntranceFader(
-        offset: Offset(0, -20),
-        duration: Duration(seconds: 1),
+             offset: Offset(0, -20),
+             duration: Duration(seconds: 1),
         delay: Duration(seconds: 3),
-        child: NavBarLogo(
+            child: NavBarLogo(
           height: MediaQuery.of(context).size.height * 0.035,
         ),
       ),

@@ -1,3 +1,4 @@
+import 'package:apurva_portfolio_new/contact/contactDesktop.dart';
 import 'package:apurva_portfolio_new/screen_type_builder.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -10,8 +11,8 @@ class Contact extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenTypeBuilder(
       mobile: ContactMobile(),
-      tab: ContactMobile(),
-      desktop: ContactMobile(),
+      tab: ContactDesktop(),
+      desktop: ContactDesktop(),
 
     );
   }

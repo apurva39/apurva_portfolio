@@ -1,3 +1,4 @@
+import 'package:apurva_portfolio_new/widgets/contactCard.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -32,11 +33,12 @@ class ContactMobile extends StatelessWidget {
               itemCount: 3,
               itemBuilder: (BuildContext context, int index, int i) =>
                   Padding(padding: EdgeInsets.symmetric(vertical: 10.0),
-                      child: ProjectCard(
+                      child: ContactCard(
+
                         cardWidth: width > 480 ? width * 0.5 : width * 0.8,
-                        projectIconData: kContactIcons[i],
-                        projectTitle: kContactTitles[i],
-                        projectDescription: kContactDetails[i],
+                        contactIcon: kContactIcons[i],
+                        contactTitle: kContactTitles[i],
+                        contactDescription: kContactDetails[i],
                       ),
           ),
               options:
