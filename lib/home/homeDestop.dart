@@ -25,7 +25,7 @@ class _HomeDesktopState extends State<HomeDesktop> {
         children: [
           Positioned(
             top: width < 1200 ? height * 0.15 : height * 0.1,
-            right: width * 0.07,
+            right: width * -0.025,
             child: Opacity(
               opacity: 0.9,
               child: EntranceFader(
@@ -33,8 +33,8 @@ class _HomeDesktopState extends State<HomeDesktop> {
                 delay: Duration(seconds: 1),
                 duration: Duration(milliseconds: 800),
                 child: Image.asset(
-                  'assets/newimg.png',
-                  height: width <1200 ? height * 0.9 : height * 0.95,
+                  'assets/4thimg.jpg',
+                  height: width <1200 ? height * 0.9 : height * 1.0,
                   // height: height*8.5,
                 ),
               ),

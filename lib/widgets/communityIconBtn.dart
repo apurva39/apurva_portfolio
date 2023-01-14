@@ -25,4 +25,6 @@ class CommunityIconBtn extends StatelessWidget {
         ),
     );
   }
+
+  launchURL(String link) {}
 }

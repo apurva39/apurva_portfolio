@@ -1,20 +1,33 @@
 
+import 'package:apurva_portfolio_new/about/aboutMobile.dart';
 import 'package:apurva_portfolio_new/portfolio/portfolio.dart';
 import 'package:apurva_portfolio_new/services/services.dart';
 import 'package:apurva_portfolio_new/widgets/arrowOnTop.dart';
 import 'package:apurva_portfolio_new/widgets/footer.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
-
+import 'package:url_launcher/url_launcher.dart';
+// import 'package:url_launcher/url_launcher.dart';
 import 'about/about.dart';
 import 'animations/entranceFader.dart';
 import 'constants.dart';
 import 'contact/contact.dart';
 import 'home/home.dart';
 import 'navBar/navBarLogo.dart';
+// import 'package:url_launcher/url_launcher.dart';
 
 class MainPage extends StatefulWidget {
+  // launchURL(String url) async
+  // {
+  //   if(await canLaunch(url))
+  //     {
+  //       await launch(url, forceWebView : true);
+  //     }
+  //   else
+  //     {
+  //       throw 'Could not launch $url';
+  //     }
+  // }
   const MainPage({Key key}) : super(key: key);
 
   @override
@@ -30,7 +43,6 @@ class _MainPageState extends State<MainPage> {
   final List<String> _sectionsName=[
     "Home",
     "About",
-
     "Projects",
     "Services",
     "Contact"
@@ -67,11 +79,11 @@ class _MainPageState extends State<MainPage> {
      else if (i == 4) {
       return Contact();
     }
-    else if (i == 5) {
-      return SizedBox(
-        height: 40.0,
-      );
-    }
+    // else if (i == 5) {
+    //   return SizedBox(
+    //     height: 40.0,
+    //   );
+    // }
     else if (i == 6)
     {
       return ArrowOnTop(
@@ -186,10 +198,23 @@ class _MainPageState extends State<MainPage> {
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(5.0),
                   side: BorderSide(color: kPrimaryColor)),
-              onPressed: () {
-                // html.window.open(
-                //     'https://drive.google.com/file/d/1DmV1XpXdcrMtOunWSNzm0-2pdrcFTEDT/view?usp=sharing',
-                //     "pdf");
+              // onPressed: () {
+              //   setState(() {
+              //     // return AboutMobile();
+              //   });
+              //   // var url = 'http://www.africau.edu/images/default/sample.pdf';
+              //   // launch(url);
+              //   // html.window.open(
+              //   //     'https://drive.google.com/file/d/1DmV1XpXdcrMtOunWSNzm0-2pdrcFTEDT/view?usp=sharing',
+              //   //     "pdf");
+              // },
+              onPressed: () async {
+                const url = 'https://blog.logrocket.com';
+                if(await canLaunch(url)){
+                  await launch(url);
+                }else {
+                  throw 'Could not launch $url';
+                }
               },
               child: Text(
                 "Resume",
@@ -227,8 +252,8 @@ class _MainPageState extends State<MainPage> {
                     borderRadius: BorderRadius.circular(5.0),
                     side: BorderSide(color: kPrimaryColor)),
                 onPressed: () {
-                  launchURL(
-                      "https://drive.google.com/file/d/1DmV1XpXdcrMtOunWSNzm0-2pdrcFTEDT/view?usp=sharing");
+                  const url="https://www.youtube.com/";
+                  launchURL(url);
                 },
                 child: ListTile(
                   leading: Icon(
@@ -245,11 +270,26 @@ class _MainPageState extends State<MainPage> {
                 ),
               ),
             ),
+            Container(
+              child: ElevatedButton(
+                onPressed: () async {
+                  const url = 'https://blog.logrocket.com';
+                  if(await canLaunch(url)){
+                    await launch(url);
+                  }else {
+                    throw 'Could not launch $url';
+                  }
+                },
+                child: Text("shdsd"),
+              ),
+            )
           ],
         ),
       ),
     );
   }
+
+  void launchURL(String url) {}
 }
 
 

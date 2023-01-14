@@ -23,12 +23,14 @@ class _HomeTabState extends State<HomeTab> {
       child: Stack(
         children: [
           Positioned(
-            bottom: width < 740 ? height * 0.1 : height * 0.15,
+
+            height: height * 1.0,
+            bottom: width < 740 ? height * 0.1 : -height * 0.1,
             right: width < 740 ? -width * 0.2 : -width * 0.1,
               child: Opacity(
 
                   opacity: 0.7,
-              child:Image.asset('assets/newimg.png',height: height * 0.75),
+              child:Image.asset('assets/9th.png',height: height * 0.75),
 
               ),
           ),

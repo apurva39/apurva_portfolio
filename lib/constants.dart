@@ -21,14 +21,14 @@ const kSocialLinks = [
 ];
 
 // URL Launcher
-void launchURL(String _url) async =>
-    await canLaunch(_url) ? await launch(_url) : throw 'Could not launch $_url';
-
-launch(String url) {
-}
-
-canLaunch(String url) {
-}
+// void launchURL(String _url) async =>
+//     await canLaunch(_url) ? await launch(_url) : throw 'Could not launch $_url';
+//
+// launch(String url, {bool forceWebView}) {
+// }
+//
+// canLaunch(String url) {
+// }
 
 // Community
 final kCommunityLogo = [
@@ -39,10 +39,11 @@ final kCommunityLogo = [
 ];
 
 final kCommunityLinks = [
-  "https://rju.edu.np/",
-  "https://www.facebook.com/enfo404",
-  "https://dsc.community.dev/u/mvyb4m/",
-  "https://www.facebook.com/enfo404"
+  "https://github.com/apurva39",
+  "https://github.com/apurva39",
+  "https://github.com/apurva39",
+  "https://github.com/apurva39",
+
 ];
 
 // Tools & Tech
@@ -71,98 +72,103 @@ final kServicesDescriptions = [
   "For now, I can only develop Android Apps using Flutter, that's because I don't own a Dell Laptop right now so can't test or debug apps for iOS. Hopefully this missing piece will be filled soon :)",
   "Although I'm mainly a flutter developer but I do care about the UI/UX for my client. Hence, I also do UI designing for applications. So, feel free to ask me for getting you UI/UX for your apps",
   "Having a startup idea? Or maybe just want a prototype for your clients? With Flutter I can get you basic version of your app in no time and you are good to go for your project in future.",
-  "I have been writing technical blogs on Medium/bolgger for over a year now. So, I can get you technical blogs with awesome header images, interesting topics.\nCheck out my Medium profile @sarojyadav88505",
-  "Working as open source contributor on GitHub with 20+ stars and numerous forks on various projects liked and shared by other developers.\nCheck out my GitHub Profile @sarojyadav88505",
+  "I have been writing technical blogs on Medium/bolgger for over a year now. So, I can get you technical blogs with awesome header images, interesting topics.",
+  "Working as open source contributor on GitHub with 20+ stars and numerous forks on various projects liked and shared by other developers.\nCheck out my GitHub Profile- github.com/apurva39",
 ];
 
 final kServicesLinks = [
-  "https://www.fiverr.com/sarojyadav335?up_rollout=true",
-  "https://www.fiverr.com/sarojyadav335?up_rollout=true",
-  "https://www.fiverr.com/sarojyadav335?up_rollout=true",
-  "https://google2googlee.blogspot.com/",
-  "https://github.com/sarojyadav88505"
+  "https://github.com/apurva39",
+  "https://github.com/apurva39",
+  "https://github.com/apurva39",
+  "https://github.com/apurva39",
+  "https://github.com/apurva39"
 ];
 
 
 //prject ka name hi servecies1 rakh diye h
 
 final kServicesIcons1 = [
-  "projects/calculator.png",
+  "projects/netflix.png",
+  "projects/wdpress.png",
   "projects/coffee.jpg",
   "projects/calculator.png",
-  "projects/calculator.png",
-  "projects/netflix.png",
+  "projects/signup.png",
+  "projects/railway1.png",
+
 ];
 
 final kServicesTitles1 = [
-  "Let's Coffee UI App",
-  "Arithematic Calculator App",
   "Static Netflix Clone page",
+  "Price Comparsion Website",
+  "Let's Coffee UI App",
+  "Arithematic Calculator",
   "SigIn SignUp Authontication App",
-  "Arithematic Calculator App",
+  "Railway DataBase",
 ];
 
 final kServicesDescriptions1 = [
-  ".,Let's Coffee UI App.",
-  "Arithematic Calculator App,.",
-  "Static Netflix Clone page.",
-  "SigIn SignUp Authontication App.",
-  "Arithematic Calculator App,.",
-  // "Working as open sknfwekknkource contributor on GitHub with 20+ stars and numerous forks on various projects liked and shared by other developers.\nCheck out my GitHub Profile @sarojyadav88505",
+  "Netflix using HTML and CSS, you would first need to create an HTML file with the basic structure of the page, such as the head and body.",
+  "Price Comparison website using wordpress .",
+  "Lets Coffee UI App is awesome app for user, they get to know about different varieties of coffee and their price.",
+  "Basically it will do arithmetic calculation. It is developed using flutter with dart.",
+  "SigIn SignUp Authentication App is developed using flutter with dart language.",
+  "Railway database is created using SQL, It contains the information of user who travels from railway.",
 ];
 
 final kServicesLinks1 = [
-  "https://www.fiverr.com/sarojyadav335?up_rollout=true",
-  "https://www.fiverr.com/sarojyadav335?up_rollout=true",
-  "https://www.fiverr.com/sarojyadav335?up_rollout=true",
-  "https://google2googlee.blogspot.com/",
-  "https://github.com/sarojyadav88505"
+  "https://github.com/apurva39/Netflix-Clone",
+  "https://github.com/apurva39/PriceComparisonWebsite",
+  "https://github.com/apurva39/Lets_Coffee_UI_App",
+  "https://github.com/apurva39/Simple_Calculator_Android_App",
+  "https://github.com/apurva39/sign_up",
+  "https://github.com/apurva39/Railway_Database",
+
 ];
 
 // projects
 
-final kProjectsBanner = [
-  // "assets/projects/calculator.png",
-  // "assets/projects/coffee.jpg",
-  // "assets/projects/calculator.png",
-  // "assets/projects/netflix.png",
-  "assets/projects/medkitB.png",
-  "assets/projects/birthday.png",
-  "assets/projects/hereiamB.png",
-  "assets/projects/covid.png",
-];
-
-final kProjectsIcons = [
-  "assets/projects/calculator.png",
-  "assets/projects/coffee.png",
-  "assets/projects/calculator.png",
-  "assets/projects/netflix.png",
-
-
-];
-
-final kProjectsTitles = [
-  "Let's Coffee UI App",
-  "Arithematic Calculator App",
-  "Static Netflix Clone page",
-  "SigIn SignUp Authontication App",
-
-];
-
-final kProjectsDescriptions = [
-  ".,Let's Coffee UI App.",
-  "Arithematic Calculator App,.",
-  "Static Netflix Clone page.",
-  "SigIn SignUp Authontication App.",
-];
-
-final kProjectsLinks = [
-  "https://github.com/sarojyadav88505/who_i_am",
-  "https://github.com/sarojyadav88505/birthday_app",
-  "https://github.com/sarojyadav88505/corona_app",
-  "https://github.com/sarojyadav88505/TikTok-UI",
-
-];
+// final kProjectsBanner = [
+//   // "assets/projects/calculator.png",
+//   // "assets/projects/coffee.jpg",
+//   // "assets/projects/calculator.png",
+//   // "assets/projects/netflix.png",
+//   // "assets/projects/medkitB.png",
+//   // "assets/projects/birthday.png",
+//
+// ];
+//
+// final kProjectsIcons = [
+//   "assets/projects/calculator.png",
+//   "assets/projects/coffee.png",
+//   "assets/projects/calculator.png",
+//   "assets/projects/netflix.png",
+//
+//
+// ];
+//
+// final kProjectsTitles = [
+//   "Let's Coffee UI App",
+//   "Arithematic Calculator App",
+//   "Static Netflix Clone page",
+//   "SigIn SignUp Authontication App",
+//
+// ];
+//
+// final kProjectsDescriptions = [
+//   ".,Let's Coffee UI App.",
+//   "Arithematic Calculator App,.",
+//   "Static Netflix Clone page.",
+//   "SigIn SignUp Authontication App.",
+// ];
+//
+// final kProjectsLinks = [
+//   "https://github.com/apurva39",
+//   "https://github.com/apurva39",
+//   "https://github.com/apurva39",
+//   "https://github.com/apurva39",
+//   "https://github.com/apurva39",
+//
+// ];
 
 // Contact
 final kContactIcons = [
@@ -179,6 +185,6 @@ final kContactTitles = [
 
 final kContactDetails = [
   "Chandigarh, India",
-  "+91 8340776554",
-  "apurvaanand101@gmail.com"
+  "+91 8340776554  \n+91 9523662669",
+  "apurvaanand101@gmail.com  \napurvaanand39@gmail.com"
 ];

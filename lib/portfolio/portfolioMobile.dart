@@ -31,7 +31,7 @@ class PortfolioMobile extends StatelessWidget {
             ),
           ),
           CarouselSlider.builder(
-              itemCount: 5,
+              itemCount: 6,
             itemBuilder: (BuildContext context, int index ,int i)=>
             Padding(padding: EdgeInsets.symmetric(vertical: 10.0),
             child: ServicesCard1(

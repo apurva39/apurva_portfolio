@@ -1,6 +1,5 @@
 import 'package:apurva_portfolio_new/constants.dart';
 import 'package:apurva_portfolio_new/navBar/navBarLogo.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

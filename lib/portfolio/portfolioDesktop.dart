@@ -107,6 +107,19 @@ class PortfolioDesktop extends StatelessWidget {
                       projectLink: kServicesLinks1[4],
                     ),
                   ),
+                  SizedBox(
+                    width: width * 0.03,
+                  ),
+                  WidgetAnimator(
+                    child: ServicesCard1(
+                      projectWidth: width < 1200 ? width * 0.3 : width * 0.22,
+                      projectHeight: width < 1200 ? height * 0.4 : height * 0.35,
+                      projectIcon: kServicesIcons1[5],
+                      projectTitle: kServicesTitles1[5],
+                      projectDescription: kServicesDescriptions1[5],
+                      projectLink: kServicesLinks1[5],
+                    ),
+                  ),
                 ],
               ),
             ],

@@ -12,7 +12,7 @@ class About extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenTypeBuilder(
       mobile: AboutMobile(),
-      tab: AboutTab(),
+      tab: AboutMobile(),
       desktop: AboutDesktop(),
     );
   }
