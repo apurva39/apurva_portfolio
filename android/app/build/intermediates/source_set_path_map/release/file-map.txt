@@ -1,0 +1,16 @@
+com.example.apurva_portfolio_new.app-core-1.6.0-0 C:\Users\Happy\.gradle\caches\transforms-3\3d943b8a8d6718874a3fad89ac634056\transformed\core-1.6.0\res
+com.example.apurva_portfolio_new.app-jetified-window-1.0.0-beta04-1 C:\Users\Happy\.gradle\caches\transforms-3\3e94d6806eb4169e793b1c4cddcd808d\transformed\jetified-window-1.0.0-beta04\res
+com.example.apurva_portfolio_new.app-jetified-annotation-experimental-1.1.0-2 C:\Users\Happy\.gradle\caches\transforms-3\ac057a03636e6585c83693bfe2e3e310\transformed\jetified-annotation-experimental-1.1.0\res
+com.example.apurva_portfolio_new.app-jetified-window-java-1.0.0-beta04-3 C:\Users\Happy\.gradle\caches\transforms-3\cd26984222cc0fa5df3c795677803a3d\transformed\jetified-window-java-1.0.0-beta04\res
+com.example.apurva_portfolio_new.app-webkit-1.5.0-4 C:\Users\Happy\.gradle\caches\transforms-3\daa99a013bfd7e44c6c19ded02fdc00d\transformed\webkit-1.5.0\res
+com.example.apurva_portfolio_new.app-pngs-5 C:\Users\Happy\Downloads\newFlutter\apurva_portfolio_new\android\app\build\generated\res\pngs\release
+com.example.apurva_portfolio_new.app-resValues-6 C:\Users\Happy\Downloads\newFlutter\apurva_portfolio_new\android\app\build\generated\res\resValues\release
+com.example.apurva_portfolio_new.app-rs-7 C:\Users\Happy\Downloads\newFlutter\apurva_portfolio_new\android\app\build\generated\res\rs\release
+com.example.apurva_portfolio_new.app-mergeReleaseResources-8 C:\Users\Happy\Downloads\newFlutter\apurva_portfolio_new\android\app\build\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.example.apurva_portfolio_new.app-mergeReleaseResources-9 C:\Users\Happy\Downloads\newFlutter\apurva_portfolio_new\android\app\build\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.example.apurva_portfolio_new.app-merged_res-10 C:\Users\Happy\Downloads\newFlutter\apurva_portfolio_new\android\app\build\intermediates\merged_res\release
+com.example.apurva_portfolio_new.app-main-11 C:\Users\Happy\Downloads\newFlutter\apurva_portfolio_new\android\app\src\main\res
+com.example.apurva_portfolio_new.app-release-12 C:\Users\Happy\Downloads\newFlutter\apurva_portfolio_new\android\app\src\release\res
+com.example.apurva_portfolio_new.app-packaged_res-13 C:\src\flutter\.pub-cache\hosted\pub.dartlang.org\path_provider_android-2.0.22\android\build\intermediates\packaged_res\release
+com.example.apurva_portfolio_new.app-packaged_res-14 C:\src\flutter\.pub-cache\hosted\pub.dartlang.org\url_launcher_android-6.0.22\android\build\intermediates\packaged_res\release
+com.example.apurva_portfolio_new.app-packaged_res-15 C:\src\flutter\.pub-cache\hosted\pub.dartlang.org\webview_flutter_android-2.10.4\android\build\intermediates\packaged_res\release

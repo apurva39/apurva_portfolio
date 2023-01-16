@@ -1,5 +1,4 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -80,7 +79,7 @@ class _HomeMobileState extends State<HomeMobile> {
                             fontSize: height * 0.03,
                             fontWeight: FontWeight.w200),
                         text: [
-                          " Flutter App Developer",
+                          " Flutter App Developerhssdhjh",
                           " Competitive Programmer",
                           " Front End Developer",
                           " ECE Undergrad at CGC",

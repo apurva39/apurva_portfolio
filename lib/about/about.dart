@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 
 import 'aboutDesktop.dart';
 import 'aboutMobile.dart';
-import 'aboutTab.dart';
 
 class About extends StatelessWidget {
   const About({Key key}) : super(key: key);
