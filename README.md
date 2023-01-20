@@ -1,8 +1,9 @@
 # Apurva_Portfolio
 
-Click here for visit- https://63cad24a98c60201fb9b8e0d--apurva-portfolio.netlify.app/#/
+Check out my portfolio- https://63cad24a98c60201fb9b8e0d--apurva-portfolio.netlify.app/#/
 
-![Uploading portfolio_ss.png…]()
+![portfolio_ss](https://user-images.githubusercontent.com/88641285/213773081-6f7a5451-cf7d-47d0-94ff-7b37ce07375c.png)
+
 
 ![ss1](https://user-images.githubusercontent.com/88641285/213772847-3292ead0-3154-4b31-890c-9a51ae4ca3f4.png)
 ![ss2](https://user-images.githubusercontent.com/88641285/213772865-ec86ad5c-52b2-4b6d-9f2c-17b5b799b16e.png)
